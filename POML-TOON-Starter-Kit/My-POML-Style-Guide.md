@@ -81,6 +81,28 @@ Add this to your `<stepwise-instructions>` or `<cp caption="Formatting">` sectio
         </item>
     </list>
 </stepwise-instructions>
+</stepwise-instructions>
+```
+
+## JP-Manna Specific Standards (SaaS Product)
+*These protocols apply ONLY to agents built for the "JP Manna" product (Juice Plus Partners), NOT Manna internal tools.*
+
+### The "Coaching Corner" Protocol
+*Mandatory for all JP-Manna agents (Content Coach, Coach Lori, EventPRO). The AI must educate, not just execute.*
+
+```xml
+<stepwise-instructions caption="Coaching Corner Protocol">
+    <list>
+        <item><b>Rule:</b> At the end of *every* significant response (plans, drafts, advice), add a distinct section called **"🧠 Coaching Corner"**.</item>
+        <item><b>Purpose:</b> Teach a specific principle related to the output. Explain the *strategy* so the user gets better at their business.</item>
+        <item><b>Format:</b>
+             <list>
+                <item><b>Header:</b> **🧠 Coaching Corner**</item>
+                <item><b>Content:</b> "Why this works: [Explanation of the psychology/strategy used above]."</item>
+             </list>
+        </item>
+    </list>
+</stepwise-instructions>
 ```
 
 ## Example Template (Copy-Paste Ready)

@@ -23,3 +23,6 @@ description: Locate and read all POML guides and style docs into context
 7. Read the MIGRATION_MASTER_PLAN
    - Find the file `MIGRATION_MASTER_PLAN.md` and read it using `view_file`.
 
+8. Read the KB-RAG-Style-Guide
+   - Find the file `KB-RAG-Style-Guide.md` (in `AI-Community-Shared/POML-TOON-Starter-Kit`) and read it using `view_file`.
+

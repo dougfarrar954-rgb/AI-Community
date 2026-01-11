@@ -102,3 +102,39 @@ When building a new Pickaxe:
 - **Do NOT** save trigger text files inside individual Pickaxe folders (e.g., `manna-startpoint-action-trigger.txt`).
 - **Do NOT** rely on memory or copy-pasting from old prompts.
 - **Why?** Pickaxe Actions often share identical triggers (e.g., "Email Summary"), and editing them in one centralized place ensures valid JSON payloads and consistent behavior across all agents.
+
+---
+
+## 7. File Formats & Conversion (MANDATORY)
+
+Every Pickaxe agent MUST have two files in its folder:
+1. `[agent-name].poml` (The Source of Truth)
+2. `[agent-name]-toon.txt` (The Platform-Ready Output)
+
+**CRITICAL RULE:** NEVER manually transcribe POML to TOON. Always use the authorized Python script to ensure `100%` fidelity.
+
+### How to Convert:
+```bash
+python "c:\Users\dougf\Documents\GitHUB\AI-Community-Shared\POML-TOON-Starter-Kit\poml_to_toon_converter.py" "<PATH_TO_POML>" "<PATH_TO_TOON>"
+```
+This script strips XML tags and formats the prompt into the official clean-text format required for the Pickaxe System Prompt field.
+
+---
+
+## 8. Platform Deployment & Optimization (MANDATORY PRE-FLIGHT)
+
+Before clicking "Save" on any Pickaxe, you **MUST** verify the **Context Window & Token Settings**. Default settings are often insufficient for RAG-heavy agents.
+
+### The "Content Coach" Standard (Example)
+Use these baseline settings for any agent that uses RAG + Coaching Logic:
+
+1.  **Output Length:** `~4,000 - 5,000 tokens`
+    *   *Why?* Needed for full content calendars or long blog posts.
+2.  **Input Length:** `~8,000 tokens`
+    *   *Why?* Allows users to paste long transcripts or messy brain dumps.
+3.  **Knowledge Base (RAG):** `8,000 - 10,000 tokens` (CRITICAL)
+    *   *Why?* If this is too low (e.g., 2000), the bot cannot "read" the Compliance Guide AND the StoryBrand Guide at the same time. **Always maximize this.**
+4.  **User Memories:** `2,000 - 3,000 tokens`
+    *   *Why?* Ensures the bot remembers user-specific details (rank, niche, voice) over time.
+5.  **Memory Buffer:** `20,000 tokens`
+    *   *Why?* Keeps the "Coach" attentive during long planning sessions.

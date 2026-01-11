@@ -91,12 +91,12 @@ Now that you know what you have:
     - Agent 1: Manna
     - Agent 2: DMO PRO
     - Agent 3: PromoPRO
-    - Agent 4: Content Creator
+    - Agent 4: Content Creator [ ] Migration Started (KB Updated)
     - Agent 5: EventPro
     - Agent 6: Coach Lori
     - Agent 7: Eat More Plants!
     - Agent 8: BibleGPT
-    - Agent 9: Mistral Medium
+    - Agent 9: Mistral Medium [x] Migrated
     - Agent 10: Gemini 3
     - Agent 11: Claude
     - Agent 12: ChatGPT
@@ -124,6 +124,14 @@ Now that you know what you have:
 - [ ] **Standard Features**: Inject the **Email Summary Protocol** block into the `<operational_directives>` (or equivalent) section.
     - *Purpose*: Enables users to request chat summaries via email.
     - *Action*: Ensure "Email User" action is configured in studio.
+
+### 2a. TOON Formatting (MANDATORY)
+- [ ] **Convert**: NEVER manually transcribe POML to TOON.
+- [ ] **Run Script**: Use the python converter to generate the clean `.txt` file:
+    ```bash
+    python "c:\Users\dougf\Documents\GitHUB\AI-Community-Shared\POML-TOON-Starter-Kit\poml_to_toon_converter.py" "<PATH_TO_POML>" "<PATH_TO_TOON>"
+    ```
+- [ ] **Verify**: Ensure the output `.toon.txt` is created/updated.
 
 ### 3. Manifest Creation
 - [ ] Create `README.md` in the agent's folder.
