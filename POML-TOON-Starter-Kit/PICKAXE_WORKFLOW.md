@@ -90,7 +90,7 @@ When building a new Pickaxe:
 | Agent | Enabled Files |
 |-------|---------------|
 | **Business Strategist** | `business-strategy.pdf`, `comp-plan.pdf` |
-| **Content Creator** | `business-strategy.pdf`, `brand-voice.pdf`, `social-scripts.docx` |
+| **Content Coach** | `business-strategy.pdf`, `brand-voice.pdf`, `social-scripts.docx` |
 | **EventPRO** | `event-playbook.pdf`, `compliance-guide.docx` |
 
 ---

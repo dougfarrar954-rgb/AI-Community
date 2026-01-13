@@ -91,7 +91,7 @@ Now that you know what you have:
     - Agent 1: Manna
     - Agent 2: DMO PRO
     - Agent 3: PromoPRO
-    - Agent 4: Content Creator [ ] Migration Started (KB Updated)
+    - Agent 4: Content Coach [ ] Migration Started (KB Updated)
     - Agent 5: EventPro
     - Agent 6: Coach Lori
     - Agent 7: Eat More Plants!
@@ -101,7 +101,7 @@ Now that you know what you have:
     - Agent 11: Claude
     - Agent 12: ChatGPT
     - Agent 13: jp2026 and beyond
-- [ ] **Create Folders**: Create a directory for each in `pickaxes/` (e.g., `pickaxes/content-creator-pickaxe/`).
+- [ ] **Create Folders**: Create a directory for each in `pickaxes/` (e.g., `pickaxes/content-coach-pickaxe/`).
 
 ---
 
