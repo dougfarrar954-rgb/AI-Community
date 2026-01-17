@@ -30,28 +30,15 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-### Step 3: Install Dependencies
+### Step 3: Start Your Learning Session
+
+Run the session initializer. **This script will perform a "Pre-flight Check" to ensure your environment is ready, offer to install any missing requirements automatically, and create your student profile.**
 
 ```bash
-pip install -r requirements.txt
+python start_session.py
 ```
 
-### Step 4: Validate Your Environment
-
-```bash
-python tools/validate_environment.py
-```
-
-You should see:
-```
-✅ Python 3.x.x detected
-✅ numpy x.x.x
-✅ sounddevice x.x.x
-✅ scipy x.x.x
-✅ matplotlib x.x.x
-✅ Audio output functional
-🎉 All checks passed! You're ready to start learning.
-```
+After running this, your environment will be validated and you'll be ready to start your first module!
 
 ## Using with Antigravity
 

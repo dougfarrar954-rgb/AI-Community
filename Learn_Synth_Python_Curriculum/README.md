@@ -1,4 +1,4 @@
-# Learn Synth Python
+ # Learn Synth Python
 
 > **A self-sufficient, self-guided course for learning Python through audio synthesis**
 
@@ -19,55 +19,56 @@ This repository is a **complete Python learning curriculum** that teaches progra
 
 ## Quick Start
 
-### Installation
+### 1. Installation
 
 ```bash
 # Clone the repository
 git clone https://github.com/AI-Community-Shared/Learn_Synth_Python_Curriculum.git
 cd Learn_Synth_Python_Curriculum
 
-# Create virtual environment
+# Create virtual environment (Optional but recommended)
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
-# Install dependencies
-pip install -r requirements.txt
+### 2. Start Your Learning Session (CRITICAL)
 
-# Validate your environment
-python tools/validate_environment.py
+To begin, run the session initializer. **This script will validate your environment, create your progress tracker, and provide a text block for you to paste into the AI chat to initialize your tutor.**
+
+```bash
+python start_session.py
+```
+
+### 3. Your First Sound
+
+```bash
+python examples/module_01/white_noise.py
 ```
 
 See [GETTING_STARTED.md](GETTING_STARTED.md) for detailed setup instructions.
 
-### Your First Sound
-
-```bash
-python examples/module_01/sine_wave.py
-```
-
-You should hear a pure 440Hz tone! 🎵
-
 ## Curriculum Structure
 
-The course is organized into **13 modules** progressing from basic waveforms to complete synthesizers:
+The course is organized into modules progressing from absolute Python basics to complete synthesizers. **Absolute beginners should start with Module 0.**
 
 | Module | Topic | Python Concepts | Audio Concepts |
 |--------|-------|----------------|----------------|
-| 1 | **Foundations** | Variables, NumPy arrays | Sample rates, digital audio |
-| 2 | **Waveforms** | Functions, classes | Sine, square, sawtooth, triangle |
-| 3 | **Envelopes** | Control flow, parameters | ADSR, amplitude shaping |
-| 4 | **Sequencing** | Loops, lists | Patterns, rhythms |
-| 5 | **Additive Synthesis** | Iteration, nested structures | Harmonics, timbre |
-| 6 | **Filters** | Mathematical operations | Low-pass, high-pass, resonance |
-| 7 | **LFOs** | Modulation, time-based logic | Tremolo, vibrato |
-| 8 | **Effects** | Buffers, delays | Echo, reverb |
-| 9 | **Sampling** | File I/O, data manipulation | WAV files, playback |
-| 10 | **Generative** | Randomness, algorithms | Procedural composition |
-| 11 | **GUI** | Tkinter, event handling | Real-time parameter control |
-| 12 | **MIDI** | Protocols, interfacing | Note input, velocity |
-| 13 | **Bridge to General Python** | **Transfer to**: Data science, game dev, finance | Pattern extraction, abstraction |
+| 0 | **Python Foundations** | Variables, Loops, Functions | Audio calculations, logic |
+| 1 | **Digital Foundations** | NumPy arrays, types | Sampling, bit depth, white noise |
+| 2 | **Waveforms** | Arithmetic, linspace | Sine, square, sawtooth, triangle |
+| 3 | **Envelopes** | Class structures | ADSR, amplitude shaping |
+| 4 | **Sequencing** | Timing, beat math | Patterns, rhythms, BPM |
+| 5 | **Additive Synth** | Iteration, summation | Harmonics, partials, timbre |
+| 6 | **Filters** | Signal processing | Low-pass, high-pass, resonance |
+| 7 | **LFOs** | Modulation logic | Tremolo, vibrato, depth |
+| 8 | **Effects** | Buffers, delays | Echo, reverb, feedback |
+| 9 | **Sampling** | File I/O, binary data | WAV files, playback, triggers |
+| 10 | **Generative** | Randomness, probability | Procedural composition |
+| 11 | **GUI** | Event handling | Real-time parameter control |
+| 12 | **MIDI** | Protocols, bitwise math | Note input, velocity, polyphony |
+| 13 | **Bridge to General** | **Transfer to**: Data science, game dev, finance | Pattern extraction, abstraction |
 
-**📖 Start Here**: [curriculum/CURRICULUM_MASTER.md](curriculum/CURRICULUM_MASTER.md)
+**📖 Start Here**: [curriculum/MODULE_00_Python_Foundations/MODULE_00_OVERVIEW.md](curriculum/MODULE_00_Python_Foundations/MODULE_00_OVERVIEW.md)
 
 ## Learning Pathways
 
@@ -76,9 +77,9 @@ The course is organized into **13 modules** progressing from basic waveforms to 
 The curriculum is designed to work with **Google Antigravity** as your AI tutor:
 
 1. Open this project in VS Code with Antigravity extension
-2. The agent references curriculum files automatically via semantic tags
-3. Tell the agent: *"I want to start Module 1"*
-4. The agent provides *scaffolded hints* (not solutions) and guides you through lessons
+2. Run `python start_session.py` in the terminal
+3. **Copy the 'ACTION REQUIRED' block** from the terminal and paste it into the Antigravity chat
+4. The agent will adopt the **Synth-Tutor** persona and guide you through your current module
 
 **Teaching Mode**: The agent uses the [Synth-Tutor system prompt](prompts/synth_tutor_system.md) which emphasizes:
 - 🧩 Scaffolding (hints, not answers)
