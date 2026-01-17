@@ -1,0 +1,103 @@
+{
+  "student_name": "",
+  "start_date": "",
+  "target_completion_date": "",
+  "modules": {
+    "module_01": {
+      "name": "Foundations",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_02": {
+      "name": "Waveforms",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_03": {
+      "name": "Envelopes",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_04": {
+      "name": "Sequencing",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_05": {
+      "name": "Additive Synthesis",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_06": {
+      "name": "Filters",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_07": {
+      "name": "LFOs",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_08": {
+      "name": "Effects",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_09": {
+      "name": "Sampling",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_10": {
+      "name": "Generative",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_11": {
+      "name": "GUI",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_12": {
+      "name": "MIDI",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    },
+    "module_13": {
+      "name": "Bridge to General Python",
+      "status": "not_started",
+      "lessons_completed": [],
+      "checkpoint_passed": false,
+      "notes": ""
+    }
+  },
+  "capstone_project": {
+    "started": false,
+    "completed": false,
+    "repository_url": ""
+  }
+}
